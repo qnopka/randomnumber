@@ -10,6 +10,6 @@ let numberOfSides = prompt('Введите количество сторон к�
 
 countThnumberOfSidesrow = Number(numberOfSides);
 
-for (var i=0; i<=countThrow; i++) {
+for (var i=1; i<=countThrow; i++) {
     document.write(getRandomInt(1, numberOfSides) + '<br>');
 }
