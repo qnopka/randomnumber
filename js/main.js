@@ -8,8 +8,11 @@ countThrow = Number(countThrow);
 
 let numberOfSides = prompt('Введите количество сторон кубика');
 
-countThnumberOfSidesrow = Number(numberOfSides);
+numberOfSides = Number(++numberOfSides);
 
-for (var i=1; i<=countThrow; i++) {
-    document.write(getRandomInt(1, numberOfSides) + '<br>');
+document.write(`Вы хотите бросить кубик ${countThrow} раз <br>`)
+document.write(`Количество сторон кубика ${numberOfSides - 1} <br><br>`)
+
+for (let i=1; i<=countThrow; i++) {
+    document.write('Номер броска ' + i + '--- Выпало значение ' + getRandomInt(1, numberOfSides) + '<br>');
 }
